@@ -7,8 +7,8 @@ export const ImageWithSteam = () => {
   const [count, setCount] = useState(DEFAULT_STEAM_COUNT)
   const steams = []
 
-  for (let i = 0; i < count; i++) {
-    steams.push(<Steam key={i} />)
+  for (let i = 0; i < DEFAULT_STEAM_COUNT; i++) {
+    steams.push(<Steam key={i} num={i} count={count} />)
   }
 
   useEffect(() => {
