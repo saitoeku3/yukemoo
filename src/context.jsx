@@ -9,12 +9,12 @@ const reducer = (state = initialState, action) => {
     case 'SET_IMAGE_URL':
       return {
         ...state,
-        imagePath: (state.imageUrl = action.value)
+        imageUrl: action.value
       }
     case 'CLEAR_IMAGE_URL':
       return {
         ...state,
-        imagePath: (state.imageUrl = '')
+        imageUrl: ''
       }
     default:
       return state

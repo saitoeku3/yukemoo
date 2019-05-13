@@ -6,16 +6,15 @@ import { FloatingButton } from './FloatingButton'
 
 export const App = () => {
   const { state } = useContext(rootContext)
-
   return (
-    <Container>
+    <Wrapper>
       <FloatingButton />
       {state.imageUrl ? <ImageWithSteam /> : ''}
-    </Container>
+    </Wrapper>
   )
 }
 
-const Container = styled.div`
+const Wrapper = styled.div`
   height: 100vh;
   background-color: #222222;
 `
