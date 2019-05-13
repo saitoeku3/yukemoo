@@ -2,14 +2,14 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { rootContext } from '../context'
 import { ImageWithSteam } from './ImageWithSteam'
-import { FloatingButton } from './FloatingButton'
+import { Fab } from './Fab'
 
 export const App = () => {
   const { state } = useContext(rootContext)
   return (
     <Wrapper>
-      <FloatingButton />
-      {state.imageUrl ? <ImageWithSteam /> : ''}
+      <Fab />
+      {state.imageUrl && <ImageWithSteam />}
     </Wrapper>
   )
 }

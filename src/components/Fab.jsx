@@ -4,11 +4,9 @@ import { UploadButton } from './UploadButton'
 import { DeleteButton } from './DeleteButton'
 import { rootContext } from '../context'
 
-export const FloatingButton = () => {
+export const Fab = () => {
   const { state } = useContext(rootContext)
-  const buttons = state.imageUrl ? <DeleteButton /> : <UploadButton />
-
-  return <Wrapper>{buttons}</Wrapper>
+  return <Wrapper>{state.imageUrl ? <DeleteButton /> : <UploadButton />}</Wrapper>
 }
 
 const Wrapper = styled.div`
