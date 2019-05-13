@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Steam } from '../atoms/Steam'
-import { UploadedImage } from '../atoms/UploadedImage'
+import { Steam } from './Steam'
+import { UploadedImage } from './UploadedImage'
 
 export const ImageWithSteam = () => {
   const steams = []

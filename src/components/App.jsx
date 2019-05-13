@@ -1,12 +1,11 @@
-import React, {useContext } from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { Store } from '../../store/context'
-
-import { ImageWithSteam } from '../organisms/ImageWithSteam'
-import { FloatingButton } from '../molecules/FloatingButton'
+import { rootContext } from '../context'
+import { ImageWithSteam } from './ImageWithSteam'
+import { FloatingButton } from './FloatingButton'
 
 export const App = () => {
-  const { state } = useContext(Store)
+  const { state } = useContext(rootContext)
 
   return (
     <Container>
